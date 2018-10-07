@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6409" started-at="2018-10-07T03:57:55Z" finished-at="2018-10-07T03:58:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6409" started-at="2018-10-07T03:57:55Z" finished-at="2018-10-07T03:58:01Z">
+      <class name="com.zkr.lh.testScript.testFqz">
+        <test-method status="PASS" signature="reday()[pri:0, instance:com.zkr.lh.testScript.testFqz@685cb137]" name="reday" is-config="true" duration-ms="6000" started-at="2018-10-07T11:57:55Z" finished-at="2018-10-07T11:58:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reday -->
+        <test-method status="PASS" signature="redayClass()[pri:0, instance:com.zkr.lh.testScript.testFqz@685cb137]" name="redayClass" is-config="true" duration-ms="10" started-at="2018-10-07T11:58:01Z" finished-at="2018-10-07T11:58:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redayClass -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.zkr.lh.testScript.testFqz@685cb137]" name="loginTest" duration-ms="390" started-at="2018-10-07T11:58:01Z" finished-at="2018-10-07T11:58:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.zkr.lh.testScript.testFqz -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
