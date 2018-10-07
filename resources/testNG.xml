@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suit name="test">
+	<test name="login">
+		<classes>
+			<class name="com.zkr.lh.testScript.suit"></class>
+			<class name="com.zkr.lh.testScript.login"></class>
+		</classes>
+	</test>
+
+	<test name="pay">
+			<class name="com.zkr.lh.testScript.suit"></class>
+			<class name="com.zkr.lh.testScript.paytest"></class>
+	</test>
+</suit>
