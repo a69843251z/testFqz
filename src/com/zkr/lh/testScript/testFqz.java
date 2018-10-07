@@ -4,6 +4,7 @@ package com.zkr.lh.testScript;
 import static org.testng.Assert.assertTrue;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
@@ -24,6 +25,7 @@ public class testFqz {
 	loginPageFactory loginpage;
 	@BeforeTest
 	public void reday() {
+		PropertyConfigurator.configure("D:\\EclipseProject\\SeleniumFqz\\tool\\log4j.properties");
 		se=new LaunchExplore(BrowsersType.firefox);
 		driver=se.driver;
 		readProperties = new GetProperties("D:\\EclipseProject\\SeleniumFqz\\tool\\fqzBasic.properties");
@@ -37,7 +39,8 @@ public class testFqz {
 	public void loginTest() {
 		loginpage.loginurl(readProperties.getValue("url"));
 		assertTrue(driver.getCurrentUrl().equals("http://106.39.94.231:9080/sinoiaaf/"));
-		logger.debug("µ«¬º≤‚ ‘µÿ÷∑"+readProperties.getValue("url"));
+		logger.info("µ«¬º≤‚ ‘µÿ÷∑"+readProperties.getValue("url"));
+		loginpage.userslogin(readProperties.getValue("username"), readProperties.getValue("password"));
 	}
 
 }

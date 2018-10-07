@@ -25,13 +25,13 @@ public class loginPageFactory {
 
 		userName.sendKeys(username);
 		passWord.sendKeys(password);
-		try {
+		/*try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		loginButton.click();
+		loginButton.click();*/
 	}
 
 	public void loginurl(String url) {
