@@ -1,4 +1,4 @@
-package com.zkr.lh.toolkit.browsers;
+package com.zkr.lh.fqz.toolkit.browsers;
 import java.util.Arrays;
 
 import org.openqa.selenium.WebDriver;

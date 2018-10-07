@@ -1,4 +1,4 @@
-package com.zkr.lh.toolkit.readProperties;
+package com.zkr.lh.fqz.toolkit.readProperties;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

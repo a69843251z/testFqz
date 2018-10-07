@@ -1,10 +1,12 @@
-package com.zkr.lh.toolkit.browsers;
+package com.zkr.lh.fqz.toolkit.browsers;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-import com.zkr.lh.toolkit.browsers.lanuchexplore.BrowsersType;
-import com.zkr.lh.toolkit.browsers.lanuchexplore.LaunchExplore;
+import com.zkr.lh.fqz.toolkit.browsers.lanuchexplore.BrowsersType;
+import com.zkr.lh.fqz.toolkit.browsers.lanuchexplore.LaunchExplore;
+
+
 
 @Test
 public class test {

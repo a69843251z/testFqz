@@ -1,4 +1,4 @@
-package com.zkr.lh.toolkit.browsers.lanuchexplore;
+package com.zkr.lh.fqz.toolkit.browsers.lanuchexplore;
 
 public enum BrowsersType {
 

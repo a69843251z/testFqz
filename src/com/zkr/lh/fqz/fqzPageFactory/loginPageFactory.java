@@ -1,4 +1,4 @@
-package com.zkr.lh.fqzPageFactory;
+package com.zkr.lh.fqz.fqzPageFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

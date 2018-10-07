@@ -1,4 +1,4 @@
-package com.zkr.lh.toolkit.browsers;
+package com.zkr.lh.fqz.toolkit.browsers;
 
 import java.io.File;
 import java.io.IOException;

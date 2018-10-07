@@ -1,4 +1,4 @@
-package com.zkr.lh.toolkit.browsers.lanuchexplore;
+package com.zkr.lh.fqz.toolkit.browsers.lanuchexplore;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,7 +22,7 @@ public class LaunchExplore {
 		switch (brosers) {
 		
 		case ie:
-			System.setProperty("webdriver.ie.driver", projectpath + "\\tool\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", projectpath + "\\resources\\IEDriverServer.exe");
 			caps = DesiredCapabilities.internetExplorer();
 			/* ÔOÖÃ°²È«IEÅcwebdriverÒ»ÖÂ */
 			caps.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
@@ -33,8 +33,8 @@ public class LaunchExplore {
 			break;
 		
 		case firefox:
-			File firebug = new File("D:\\EclipseProject\\Selenium\\tool\\firebug@software.joehewitt.com.xpi");
-			File firepath = new File(projectpath + "/tool/FireXPath@pierre.tholence.com.xpi");
+			File firebug = new File("D:\\EclipseProject\\Selenium\\resources\\firebug@software.joehewitt.com.xpi");
+			File firepath = new File(projectpath + "/resources/FireXPath@pierre.tholence.com.xpi");
 			firefoxprofile = new FirefoxProfile();
 			try {
 				firefoxprofile.addExtension(firebug);
@@ -48,7 +48,7 @@ public class LaunchExplore {
 			break;
 
 		case chrome:
-			System.setProperty("webdriver.chrome.driver", projectpath + "\\tool\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", projectpath + "\\resources\\chromedriver.exe");
 			caps = DesiredCapabilities.chrome();
 			caps.setCapability("chrome.switches", Arrays.asList("--start-maximized"));
 			driver = new ChromeDriver(caps);

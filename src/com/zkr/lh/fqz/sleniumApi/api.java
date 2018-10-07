@@ -1,4 +1,4 @@
-package com.zkr.lh.sleniumApi;
+package com.zkr.lh.fqz.sleniumApi;
 
 
 
@@ -14,8 +14,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.zkr.lh.toolkit.browsers.lanuchexplore.BrowsersType;
-import com.zkr.lh.toolkit.browsers.lanuchexplore.LaunchExplore;
+import com.zkr.lh.fqz.toolkit.browsers.lanuchexplore.BrowsersType;
+import com.zkr.lh.fqz.toolkit.browsers.lanuchexplore.LaunchExplore;
+
+
 
 public class api {
 	WebDriver driver;

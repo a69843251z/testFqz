@@ -1,4 +1,4 @@
-package com.zkr.lh.toolkit.browsers;
+package com.zkr.lh.fqz.toolkit.browsers;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
