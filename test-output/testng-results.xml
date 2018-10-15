@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="87" started-at="2018-10-15T05:56:02Z" finished-at="2018-10-15T05:56:02Z">
+  <suite name="parameter" duration-ms="60" started-at="2018-10-15T09:41:16Z" finished-at="2018-10-15T09:41:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="87" started-at="2018-10-15T05:56:02Z" finished-at="2018-10-15T05:56:02Z">
-      <class name="com.lh.practice.testng.depend">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.lh.practice.testng.depend@4678c730]" name="test1" duration-ms="25" started-at="2018-10-15T13:56:02Z" finished-at="2018-10-15T13:56:02Z">
+    <test name="Test" duration-ms="60" started-at="2018-10-15T09:41:16Z" finished-at="2018-10-15T09:41:16Z">
+      <class name="com.lh.practice.testng.paramter.parameterTest">
+        <test-method status="PASS" signature="parameter(java.lang.String, int)[pri:0, instance:com.lh.practice.testng.paramter.parameterTest@371a67ec]" name="parameter" duration-ms="10" started-at="2018-10-15T09:41:16Z" finished-at="2018-10-15T09:41:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[26]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.lh.practice.testng.depend@4678c730]" name="test2" duration-ms="4" started-at="2018-10-15T13:56:02Z" depends-on-methods="com.lh.practice.testng.depend.test1" finished-at="2018-10-15T13:56:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- com.lh.practice.testng.depend -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- parameter -->
+      </class> <!-- com.lh.practice.testng.paramter.parameterTest -->
+    </test> <!-- Test -->
+  </suite> <!-- parameter -->
 </testng-results>

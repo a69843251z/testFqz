@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [reportTest]">
+  <listeners>
+    <listener class-name="com.zkr.lh.fqz.toolkit.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.lh.practice.testng.timeOutTest">
+      <class name="com.lh.practice.testng.report.testNG">
         <methods>
-          <include name="testUnSuccess"/>
+          <include name="AfterSuite"/>
+          <include name="BeforeClass"/>
+          <include name="AfterMethod"/>
+          <include name="test4"/>
+          <include name="AfterClass"/>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="beforesuit"/>
+          <include name="BeforeTest"/>
         </methods>
-      </class> <!-- com.lh.practice.testng.timeOutTest -->
+      </class> <!-- com.lh.practice.testng.report.testNG -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [reportTest] -->
