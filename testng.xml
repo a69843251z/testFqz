@@ -3,15 +3,15 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zkr.lh.testScript.suit"/>
-      <class name="com.zkr.lh.testScript.login"/>
+      <class name="com.lh.practice.testng.suit.suitConfig"/>
+      <class name="com.lh.practice.testng.suit.loginTest"/>
     </classes>
   </test>
   
     <test thread-count="5" name="Test2">
     <classes>
-      <class name="com.zkr.lh.testScript.suit"/>
-      <class name="com.zkr.lh.testScript.paytest"/>
+      <class name="com.lh.practice.testng.suit.suitConfig"/>
+      <class name="com.lh.practice.testng.suit.payTest"/>
     </classes>
   </test>
 </suite> <!-- Suite -->

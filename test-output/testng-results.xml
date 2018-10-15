@@ -1,45 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21" started-at="2018-10-07T15:16:08Z" finished-at="2018-10-07T15:16:08Z">
+  <suite name="Default suite" duration-ms="87" started-at="2018-10-15T05:56:02Z" finished-at="2018-10-15T05:56:02Z">
     <groups>
-      <group name="server">
-        <method signature="groups.test1()[pri:0, instance:com.lh.practice.testng.groups@1b604f19]" name="test1" class="com.lh.practice.testng.groups"/>
-        <method signature="groups.test2()[pri:0, instance:com.lh.practice.testng.groups@1b604f19]" name="test2" class="com.lh.practice.testng.groups"/>
-      </group> <!-- server -->
-      <group name="client">
-        <method signature="groups.test3()[pri:0, instance:com.lh.practice.testng.groups@1b604f19]" name="test3" class="com.lh.practice.testng.groups"/>
-        <method signature="groups.test4()[pri:0, instance:com.lh.practice.testng.groups@1b604f19]" name="test4" class="com.lh.practice.testng.groups"/>
-      </group> <!-- client -->
     </groups>
-    <test name="Default test" duration-ms="21" started-at="2018-10-07T15:16:08Z" finished-at="2018-10-07T15:16:08Z">
-      <class name="com.lh.practice.testng.groups">
-        <test-method status="PASS" signature="serverBeforeGroups()[pri:0, instance:com.lh.practice.testng.groups@1b604f19]" name="serverBeforeGroups" is-config="true" duration-ms="4" started-at="2018-10-07T23:16:08Z" finished-at="2018-10-07T23:16:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- serverBeforeGroups -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.lh.practice.testng.groups@1b604f19]" name="test1" duration-ms="4" started-at="2018-10-07T23:16:08Z" finished-at="2018-10-07T23:16:08Z">
+    <test name="Default test" duration-ms="87" started-at="2018-10-15T05:56:02Z" finished-at="2018-10-15T05:56:02Z">
+      <class name="com.lh.practice.testng.depend">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.lh.practice.testng.depend@4678c730]" name="test1" duration-ms="25" started-at="2018-10-15T13:56:02Z" finished-at="2018-10-15T13:56:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.lh.practice.testng.groups@1b604f19]" name="test2" duration-ms="1" started-at="2018-10-07T23:16:08Z" finished-at="2018-10-07T23:16:08Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.lh.practice.testng.depend@4678c730]" name="test2" duration-ms="4" started-at="2018-10-15T13:56:02Z" depends-on-methods="com.lh.practice.testng.depend.test1" finished-at="2018-10-15T13:56:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="serverAfterGroups()[pri:0, instance:com.lh.practice.testng.groups@1b604f19]" name="serverAfterGroups" is-config="true" duration-ms="1" started-at="2018-10-07T23:16:08Z" finished-at="2018-10-07T23:16:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- serverAfterGroups -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.lh.practice.testng.groups@1b604f19]" name="test3" duration-ms="0" started-at="2018-10-07T23:16:08Z" finished-at="2018-10-07T23:16:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="test4()[pri:0, instance:com.lh.practice.testng.groups@1b604f19]" name="test4" duration-ms="1" started-at="2018-10-07T23:16:08Z" finished-at="2018-10-07T23:16:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test4 -->
-      </class> <!-- com.lh.practice.testng.groups -->
+      </class> <!-- com.lh.practice.testng.depend -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
