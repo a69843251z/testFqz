@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.lh.practice.testng.groups.groupsOnClass1" />
+			<class name="com.lh.practice.testng.groups.groupsOnClass2" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test2">
+		<groups>
+			<run>
+			<!-- 这里的是组名 -->
+				<include name="stu"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.lh.practice.testng.groups.groupsOnClass1" />
+			<class name="com.lh.practice.testng.groups.groupsOnClass2" />
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->
