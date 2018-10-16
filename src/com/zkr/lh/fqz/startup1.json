@@ -1,12 +1,26 @@
 [
 	{
-		"description": "this is my first mock",
+		"description": "this is no parameter request",
 		"request": {
 			"uri": "/demo",
-			"method":"get"
+			"method": "get"
 		},
 		"response": {
-			"text": "this is firet mock demo"
+			"text": "this is no parameter request"
+		}
+	},
+	{
+		"description": "this is have parameter",
+		"request": {
+			"uri": "/haveparameter",
+			"method": "get",
+			"queries": {
+				"name": "liuhao",
+				"age": "18"
+			}
+		},
+		"response": {
+			"text": "liuhao is come"
 		}
 	}
 ]
