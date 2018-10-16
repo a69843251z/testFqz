@@ -1,0 +1,12 @@
+[
+	{
+		"description": "this is my first mock",
+		"request": {
+			"uri": "/demo",
+			"method":"get"
+		},
+		"response": {
+			"text": "this is firet mock demo"
+		}
+	}
+]

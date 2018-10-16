@@ -1,0 +1,12 @@
+[
+	{
+		"description": "this is no parameter request",
+		"request": {
+			"uri": "/demo",
+			"method":"get"
+		},
+		"response": {
+			"text": "this is no parameter request"
+		}
+	}
+]
