@@ -1,0 +1,15 @@
+[
+	{
+		"description": "this is have parameter post request",
+		"request": {
+			"uri": "papost",
+			"method": "post",
+			"forms": {
+				"sex": "man"
+			}
+		},
+		"response": {
+			"text": "nice work"
+		}
+	}
+]

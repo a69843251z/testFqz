@@ -53,7 +53,7 @@
 			<artifactId>extentreports</artifactId>
 			<version>3.0.6</version>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/com.github.dreamhead/moco-runner -->
 		<dependency>
 			<groupId>com.github.dreamhead</groupId>
@@ -61,6 +61,12 @@
 			<version>0.11.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.1.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>

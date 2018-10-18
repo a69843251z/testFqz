@@ -1,0 +1,114 @@
+[
+	{
+		"description": "第一个get请求",
+		"request": {
+			"method": "get",
+			"uri": "/get/demo/first"
+		},
+		"response": {
+		"headers":{
+		"content-type":"text/html;charset=UTF-8"
+		},
+			"text": "this is get response"
+		}
+	},
+	{
+		"description": "Get请求带参数",
+		"request": {
+			"uri": "/get/demo/parameter",
+			"method": "get",
+			"queries": {
+				"name": "liuhao",
+				"age": "25"
+			}
+		},
+		"response": {
+			"text": "Get请求带参数"
+		}
+	},
+	{
+		"description": "get请求带cookie",
+		"request": {
+			"uri": "/get/demo/cookie",
+			"method": "get",
+			"cookies": {
+				"login": "true"
+			}
+		},
+		"response": {
+			"cookies": {
+				"login": "true"
+			},
+			"text": "this is have cookies response"
+		}
+	},
+	{
+		"description": "get json数据访问",
+		"request": {
+			"uri": "/get/demo/json",
+			"method": "get",
+			"json": {
+				"name": "liuhao",
+				"sex": "man"
+			}
+		},
+		"response": {
+			"json": {
+				"liuhao": "success",
+				"status": "true"
+			}
+		}
+	},
+	{
+		"description": "带header的请求",
+		"request": {
+			"uri": "/get/demo/header",
+			"method": "get",
+			"headers": {
+				"content-type": "application/json"
+			},
+			"json": {
+				"name": "liuhao"
+			}
+		},
+		"response": {
+			"json": {
+				"resault": "true"
+			}
+		}
+	},
+	{
+		"description": "重定向",
+		"request": {
+			"uri": "/get/demo/redirectTo",
+			"method": "get"
+		},
+		"redirectTo": "http://www.baidu.com/"
+	},
+	{
+		"description": "get请求带参数",
+		"request": {
+			"uri": "/get/demo/getparameter",
+			"method": "get",
+			"queries": {
+				"name": "liuhao"
+			}
+		},
+		"response": {
+			"text": "get请求带参数"
+		}
+	},
+	{
+		"description": "post请求带参数",
+		"request": {
+			"uri": "/get/demo/postparameter",
+			"method": "post",
+			"forms": {
+				"name": "liuhao"
+			}
+		},
+		"response": {
+			"text": "post请求带参数"
+		}
+	}
+]
