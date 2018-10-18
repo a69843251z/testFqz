@@ -3,19 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.lh.practice.testng.report.testNG">
+      <class name="com.lh.practice.httpclient.myHttpClient">
         <methods>
-          <include name="AfterSuite"/>
-          <include name="BeforeClass"/>
-          <include name="AfterMethod"/>
-          <include name="test4"/>
-          <include name="AfterClass"/>
-          <include name="AfterTest"/>
-          <include name="BeforeMethod"/>
-          <include name="beforesuit"/>
-          <include name="BeforeTest"/>
+          <include name="httpGetMock"/>
         </methods>
-      </class> <!-- com.lh.practice.testng.report.testNG -->
+      </class> <!-- com.lh.practice.httpclient.myHttpClient -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,28 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="parameter" duration-ms="60" started-at="2018-10-15T09:41:16Z" finished-at="2018-10-15T09:41:16Z">
+  <suite name="Default suite" duration-ms="86" started-at="2018-10-18T02:52:34Z" finished-at="2018-10-18T02:52:34Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="60" started-at="2018-10-15T09:41:16Z" finished-at="2018-10-15T09:41:16Z">
-      <class name="com.lh.practice.testng.paramter.parameterTest">
-        <test-method status="PASS" signature="parameter(java.lang.String, int)[pri:0, instance:com.lh.practice.testng.paramter.parameterTest@371a67ec]" name="parameter" duration-ms="10" started-at="2018-10-15T09:41:16Z" finished-at="2018-10-15T09:41:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[lh]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[26]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="86" started-at="2018-10-18T02:52:34Z" finished-at="2018-10-18T02:52:34Z">
+      <class name="com.lh.practice.httpclient.test">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.lh.practice.httpclient.test@4671e53b]" name="test" duration-ms="30" started-at="2018-10-18T02:52:34Z" finished-at="2018-10-18T02:52:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- parameter -->
-      </class> <!-- com.lh.practice.testng.paramter.parameterTest -->
-    </test> <!-- Test -->
-  </suite> <!-- parameter -->
+        </test-method> <!-- test -->
+      </class> <!-- com.lh.practice.httpclient.test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
