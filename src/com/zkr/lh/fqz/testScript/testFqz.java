@@ -25,11 +25,12 @@ public class testFqz {
 	LaunchExplore se;
 	GetProperties readProperties;
 	loginPageFactory loginpage;
+	String projectUrl=System.getProperty("user.dir");
 	
 	@BeforeTest
 	public void reday() {
-		readProperties = new GetProperties("D:\\EclipseProject\\SeleniumFqz\\resources\\fqzBasic.properties");
-		PropertyConfigurator.configure("D:\\EclipseProject\\SeleniumFqz\\resources\\log4j.properties");
+		readProperties = new GetProperties(projectUrl+"\\resources\\fqzBasic.properties");
+		PropertyConfigurator.configure(projectUrl+"\\resources\\log4j.properties");
 		se=new LaunchExplore(BrowsersType.chrome);
 		driver=se.driver;
 		loginpage=new loginPageFactory(driver);
@@ -39,7 +40,7 @@ public class testFqz {
 	public void loginTest() {
 		loginpage.loginurl(readProperties.getValue("url"));
 		assertTrue(driver.getCurrentUrl().equals("http://106.39.94.231:9080/sinoiaaf/"));
-		logger.info("µ«¬º≤‚ ‘µÿ÷∑"+readProperties.getValue("url"));
+		logger.info("ÁôªÂΩïÁΩëÂùÄ‰∏∫"+readProperties.getValue("url"));
 		loginpage.userslogin(readProperties.getValue("username"), readProperties.getValue("password"));
 	}
 

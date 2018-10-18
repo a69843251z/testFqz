@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.lh.practice.httpclient.myHttpClient">
+      <class name="com.zkr.lh.fqz.testScript.testFqz">
         <methods>
-          <include name="httpGetMock"/>
+          <include name="reday"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.lh.practice.httpclient.myHttpClient -->
+      </class> <!-- com.zkr.lh.fqz.testScript.testFqz -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

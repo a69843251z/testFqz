@@ -22,18 +22,18 @@ public class LaunchExplore {
 		switch (brosers) {
 		
 		case ie:
-			System.setProperty("webdriver.ie.driver", projectpath + "\\resources\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", "E:\\myWorkSpace\\testFqz\\resources\\IEDriverServer.exe");
 			caps = DesiredCapabilities.internetExplorer();
-			/* ÔOÖÃ°²È«IEÅcwebdriverÒ»ÖÂ */
+			/* ï¿½Oï¿½Ã°ï¿½È«IEï¿½cwebdriverÒ»ï¿½ï¿½ */
 			caps.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-			/* privateÄ£Ê½£¬„h³ýcookie Åc catch */
+			/* privateÄ£Ê½ï¿½ï¿½ï¿½hï¿½ï¿½cookie ï¿½c catch */
 			caps.setCapability(InternetExplorerDriver.IE_SWITCHES, "-private");
 			caps.setCapability("ignoreZoomSetting", true);
 			driver = new InternetExplorerDriver(caps);
 			break;
 		
 		case firefox:
-			File firebug = new File("D:\\EclipseProject\\Selenium\\resources\\firebug@software.joehewitt.com.xpi");
+			File firebug = new File(projectpath+"\\resources\\firebug@software.joehewitt.com.xpi");
 			File firepath = new File(projectpath + "/resources/FireXPath@pierre.tholence.com.xpi");
 			firefoxprofile = new FirefoxProfile();
 			try {

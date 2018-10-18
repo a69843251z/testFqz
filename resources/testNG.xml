@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suit name="test">
-	<test name="login">
+<suit name="fqzTest">
+	<test name="testSuit">
 		<classes>
-			<class name="com.zkr.lh.testScript.suit"></class>
-			<class name="com.zkr.lh.testScript.login"></class>
+			<class
+				name="/testFqz/src/com/zkr/lh/fqz/testScript/testFqz.java"></class>
 		</classes>
 	</test>
+	<listeners>
+		<listener
+			class-name="com.zkr.lh.fqz.toolkit.ExtentTestNGIReporterListener"></listener>
+	</listeners>
 
-	<test name="pay">
-			<class name="com.zkr.lh.testScript.suit"></class>
-			<class name="com.zkr.lh.testScript.paytest"></class>
-	</test>
 </suit>

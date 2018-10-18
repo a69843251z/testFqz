@@ -6,9 +6,9 @@
 			"uri": "/get/demo/first"
 		},
 		"response": {
-		"headers":{
-		"content-type":"text/html;charset=UTF-8"
-		},
+			"headers": {
+				"content-type": "text/html;charset=UTF-8"
+			},
 			"text": "this is get response"
 		}
 	},
@@ -27,9 +27,22 @@
 		}
 	},
 	{
-		"description": "get请求带cookie",
+		"description": "get返回带cookie",
 		"request": {
 			"uri": "/get/demo/cookie",
+			"method": "get"
+		},
+		"response": {
+			"cookies": {
+				"login": "true"
+			},
+			"text": "this is have cookies response"
+		}
+	},
+	{
+		"description": "get请求带cookie",
+		"request": {
+			"uri": "/get/demo/sendcookie",
 			"method": "get",
 			"cookies": {
 				"login": "true"
@@ -37,7 +50,9 @@
 		},
 		"response": {
 			"cookies": {
-				"login": "true"
+				"login": "true",
+				"name":"liuhao",
+				"sex":"man"
 			},
 			"text": "this is have cookies response"
 		}
