@@ -33,18 +33,9 @@ public class LaunchExplore {
 			break;
 		
 		case firefox:
-			File firebug = new File(projectpath+"\\resources\\firebug@software.joehewitt.com.xpi");
-			File firepath = new File(projectpath + "/resources/FireXPath@pierre.tholence.com.xpi");
-			firefoxprofile = new FirefoxProfile();
-			try {
-				firefoxprofile.addExtension(firebug);
-				firefoxprofile.addExtension(firepath);
-				firefoxprofile.setPreference("webdriver.accept.untrusted.certs", "true");
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			driver = new FirefoxDriver(firefoxprofile);
+			System.setProperty("webdriver.firefox.bin", "F:\\firefox55.0\\firefox.exe");
+			System.setProperty("webdriver.gecko.driver", "E:\\eclipse-Project\\testFqz\\resources\\geckodriver.exe");
+			WebDriver driver= new FirefoxDriver();
 			break;
 
 		case chrome:

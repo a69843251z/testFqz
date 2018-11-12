@@ -18,18 +18,9 @@ public class LaunchFF {
 
 	@BeforeClass
 	public void startFirefox() {
-		File firebug = new File("D:\\EclipseProject\\Selenium\\tool\\firebug@software.joehewitt.com.xpi");
-		File firepath = new File(projectpath + "/tool/FireXPath@pierre.tholence.com.xpi");
-		firefoxprofile = new FirefoxProfile();
-		try {
-			firefoxprofile.addExtension(firebug);
-			firefoxprofile.addExtension(firepath);
-			firefoxprofile.setPreference("webdriver.accept.untrusted.certs", "true");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		ffwb = new FirefoxDriver(firefoxprofile);
+		System.setProperty("webdriver.firefox.bin", "F:\\firefox55.0\\firefox.exe");
+		System.setProperty("webdriver.gecko.driver", "E:\\eclipse-Project\\testFqz\\resources\\geckodriver.exe");
+		WebDriver driver= new FirefoxDriver();
 	}
 
 	@Test
